@@ -6,4 +6,5 @@ package designpatternstart;
  * imformation：
  */
 public interface FlyBehavior {
+    void fly();
 }

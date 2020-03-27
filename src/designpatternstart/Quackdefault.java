@@ -6,4 +6,8 @@ package designpatternstart;
  * imformation：
  */
 public class Quackdefault implements QuackBehavior {
+    @Override
+    public void quack() {
+
+    }
 }
