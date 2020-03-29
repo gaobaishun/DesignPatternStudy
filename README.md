@@ -195,3 +195,143 @@ flyBehavior和quackBehavior的实现。
 上面用到了一个设计模式：**策略模式（StrategyPattern） ，定义了算法族，分别封装起来，让他们之间可以相互替换，此模式让算法的变化独立于使用算法的客户。**
 
 上面的一个决定某个鸭子具体实现怎样的飞行，以及叫的行为就是典型的策略模式。
+
+ ##**2，代理模式**
+ 现在有个需求，有遍布城市各地糖果机零售机，boss想要一个功能打印出糖果零售机的信息，以便boss在家管理。
+ 
+ 这个是糖果机，为了方便学习假设，这个糖果机只有位置信息。
+
+    public class GumballMachine {
+        String location;
+        public GumballMachine(String location){
+            this.location=location;
+        }
+        public String getLocation(){
+            return location;
+        }
+    }
+
+ 
+
+    /**
+     * @Author gaobaishun
+     * @Date 2020-03-29 16:12
+     * imformation：糖果机监视器，boss端使用
+     */
+    public class GumballMonitor {
+        GumballMachine machine;
+        public GumballMonitor(GumballMachine gumballMachine){
+            this.machine=gumballMachine;
+        }
+    public void report(){
+            System.out.println("Gumball Location:"+machine.getLocation());
+        }
+    }
+    
+    
+    现在boss可以这样获取糖果的机的打印信息。
+    
+
+    /**
+     * @Author gaobaishun
+     * @Date 2020-03-29 16:23
+     * imformation：
+     */
+    public class GumballMonitorTest {
+        public static void main(String[] args) {
+            GumballMachine gumballMachine=new GumballMachine("天安门门口");
+            
+            
+            GumballMonitor gumballMonitor=new GumballMonitor(gumballMachine);
+            gumballMonitor.report();
+        }
+    }
+
+看上去没问题。但是实际上boss的意思是远程监控糖果机的信息。这里引入一个概念，远程代理（remote proxy）。上述例子，糖果机和监视器必须在一个JVM中，但实际上要求在两个JVM上实现监控。这里就需要用到代理。一个糖果机代理，就是一个中间对象，对于boss来说可以这个代理看成糖果机。而实际上是这个代理通过网络与远程的真正糖果机沟通。
+
+boss---》糖果监视器-----》糖果代理----------》网络----》糖果机
+
+
+这里介绍一个java内置的工具-RMI（Remote Method Invocation）远程方法调用。
+[RMIdemo][1]
+
+
+  [1]: https://github.com/gaobaishun/TechnologyTest/tree/master/src/RMITest
+  
+首先创建一个接口：一定要抛出异常以及扩展Remote
+
+    public interface GumballMachineRemote extends Remote {
+        String getCurrentGumballMachingLocation() throws RemoteException;
+    }
+
+  一定要扩展UnicastRemoteObject
+
+    public class GumballMachine2 extends UnicastRemoteObject implements GumballMachineRemote{
+        public String location;
+        public GumballMachine2(String location) throws RemoteException {
+            this.location=location;
+        }
+        public String getLocation(){
+            return location;
+        }
+    
+        @Override
+        public String getCurrentGumballMachingLocation() throws RemoteException{
+            return location;
+        }
+    }
+
+  这里是注册
+
+    public class RMIRegistry {
+        public static void main(String[] args) {
+            try {
+                //GumballMachine2 gumballMachine2 = new GumballMachine2("北京的");
+                GumballMachineRemote gumballMachineRemote=new GumballMachine2("beijing");
+                Registry registry= LocateRegistry.createRegistry(1098);
+                registry.bind("a",gumballMachineRemote);
+                //Naming.rebind("//localhost/gumballMachine2",gumballMachineRemote );
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    以上服务端已经建立完成。
+    
+    现在来客户端
+    
+        public class Client {
+        public static void main(String[] args) {
+            try {
+            Registry registry= LocateRegistry.getRegistry(1098);
+            GumballMachineRemote remote=(GumballMachineRemote)registry.lookup("a");
+            //System.out.println(remote.getCurrentGumballMachingLocation());
+            GumballMonitor2 gumballMonitor=new GumballMonitor2(remote);
+            gumballMonitor.report();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        }
+    
+        }
+    }
+    
+    
+        public class GumballMonitor2 {
+        GumballMachineRemote machine;
+        public GumballMonitor2(GumballMachineRemote gumballMachine){
+            this.machine=gumballMachine;
+        }
+    
+        public void report(){
+            try {
+                System.out.println("Gumball Location:"+machine.getCurrentGumballMachingLocation());
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+    
+        }
+    }
+    上面就是一个远程代理的例子，客户无需关心是哪个糖果机，交给主函数中的代码来做。主函数底层通过网络，自动完成监视。

@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3ffb56-ed83-42c5-aeea-c311ecaeda36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/FlyBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/FlyNoWays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/FlyWithWings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/FlywithRocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/MDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/QuackBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/QuackHongHong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/Quackdefault.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/RDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatternstart/RocktDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/GumballMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/GumballMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/GumballMonitorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachine2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachineRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMonitor2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/RMIRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -52,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1688">
-                <caret line="196" column="37" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+              <first_editor relative-caret-position="-2888">
+                <caret line="198" column="3" selection-start-line="198" selection-start-column="3" selection-end-line="198" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,89 +54,99 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/RocktDuck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/FlywithRocket.java">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMachine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" selection-start-line="7" selection-end-line="14" />
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
-                <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/QuackHongHong.java">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachine2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="10" selection-end-line="23" selection-end-column="1" />
               <folding>
-                <element signature="e#192#193#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/RMIRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachineRemote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="13" column="10" selection-start-line="13" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMonitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
                 <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/Quackdefault.java">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMonitor2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="377">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/FlyBehavior.java">
+        <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMonitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="5" selection-start-line="7" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/FlyWithWings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="4" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/FlyNoWays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="11" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designpatternstart/QuackBehavior.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="276">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -175,6 +178,14 @@
         <option value="$PROJECT_DIR$/src/designpatternstart/QuackHongHong.java" />
         <option value="$PROJECT_DIR$/src/designpatternstart/RocktDuck.java" />
         <option value="$PROJECT_DIR$/src/designpatternstart/Duck.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/GumballMachine.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/GumballMonitor.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/GumballMonitorTest.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachineRemote.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachine2.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/RMIRegistry.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMonitor.java" />
+        <option value="$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/Client.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -206,7 +217,14 @@
               <item name="DesignPatternStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPatternStudy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="designpatternstart" type="462c0819:PsiDirectoryNode" />
+              <item name="ProxyPattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatternStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatternStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ProxyPattern" type="462c0819:PsiDirectoryNode" />
+              <item name="RemoteProxy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,10 +237,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585314047898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585483941548" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ProxyPattern.RemoteProxy" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="designpatternstart" />
     </key>
@@ -239,7 +260,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProxyPattern.RemoteProxy.Client" />
+      <module name="DesignPatternStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProxyPattern.RemoteProxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DesignPatternStudy" />
@@ -250,6 +284,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RMIRegistry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProxyPattern.RemoteProxy.RMIRegistry" />
+      <module name="DesignPatternStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProxyPattern.RemoteProxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.RMIRegistry" />
+      <item itemvalue="Application.Client" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.RMIRegistry" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -261,12 +319,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585296295157</updated>
-      <workItem from="1585296301928" duration="5963000" />
+      <workItem from="1585296301928" duration="12467000" />
     </task>
+    <task id="LOCAL-00001" summary="策略模式">
+      <created>1585314129395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585314129395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5963000" />
+    <option name="totallyTimeSpent" value="12467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="949" extended-state="0" />
@@ -279,14 +345,15 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32905483" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32905483" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32905483" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43057176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -304,6 +371,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="策略模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="策略模式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -359,21 +430,21 @@
     <entry file="file://$PROJECT_DIR$/src/designpatternstart/QuackBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/designpatternstart/Quackdefault.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
+          <caret line="8" column="10" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/designpatternstart/QuackHongHong.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
+          <caret line="8" column="13" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#192#193#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
@@ -395,7 +466,7 @@
     <entry file="file://$PROJECT_DIR$/src/designpatternstart/RocktDuck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
+          <caret line="8" column="5" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -416,11 +487,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMonitorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachineRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="13" column="10" selection-start-line="13" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMachine2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="10" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/RMIRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/GumballMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyPattern/RemoteProxy/GumballMonitor2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1688">
-            <caret line="196" column="37" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+          <first_editor relative-caret-position="-2888">
+            <caret line="198" column="3" selection-start-line="198" selection-start-column="3" selection-end-line="198" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
